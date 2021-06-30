@@ -1,0 +1,58 @@
+.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+.title {
+    grid-column: 1 / span 2; 
+    text-align: center;
+}
+
+.form {
+    grid-column: 1;
+}
+
+.content {
+    grid-column: 2;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 500px;
+    padding: 100px;
+    max-width: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
